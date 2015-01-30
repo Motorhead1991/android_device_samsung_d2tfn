@@ -1,0 +1,3 @@
+on boot
+service netmgrd /system/bin/netmgrd
+    class main
