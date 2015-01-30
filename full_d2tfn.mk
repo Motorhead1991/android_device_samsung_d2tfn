@@ -26,12 +26,12 @@ PRODUCT_PACKAGES := \
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-# Inherit from d2vzw device
-$(call inherit-product, device/samsung/d2vzw/device.mk)
+# Inherit from d2tfn device
+$(call inherit-product, device/samsung/d2tfn/device.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_d2vzw
-PRODUCT_DEVICE := d2vzw
-PRODUCT_BRAND := Verizon
+PRODUCT_NAME := full_d2tfn
+PRODUCT_DEVICE := d2tfn
+PRODUCT_BRAND := Straight Talk
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := SCH-I535
+PRODUCT_MODEL := SCH-S968C
