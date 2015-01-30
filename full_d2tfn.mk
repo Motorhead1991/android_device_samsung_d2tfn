@@ -32,6 +32,6 @@ $(call inherit-product, device/samsung/d2tfn/device.mk)
 # Set those variables here to overwrite the inherited values.
 PRODUCT_NAME := full_d2tfn
 PRODUCT_DEVICE := d2tfn
-PRODUCT_BRAND := Straight Talk
+PRODUCT_BRAND := Straight_Talk
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_MODEL := SCH-S968C
