@@ -15,10 +15,13 @@
 #
 
 ## (2) Also get non-open-source specific aspects if available
-$(call inherit-product-if-exists, vendor/samsung/d2vzw/d2vzw-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/d2tfn/d2tfn-vendor.mk)
 
 ## overlays
-DEVICE_PACKAGE_OVERLAYS += device/samsung/d2vzw/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/d2tfn/overlay
 
 # Inherit from d2-common
 $(call inherit-product, device/samsung/d2-common/d2-common.mk)
+
+PRODUCT_PACKAGES += \
+    init.target.rc \
