@@ -1,15 +1,14 @@
 # system.prop for SCH-I535
 #
 ## cannot take spaces
-rild.libpath=/system/lib/libril-qc-qmi-1.so
 rild.libargs=-d /dev/smd0
 
-ro.cdma.home.operator.numeric=311480
-ro.cdma.home.operator.alpha=Verizon
+ro.cdma.home.operator.numeric=310000
+ro.cdma.home.operator.alpha=TracFone
 ro.cdma.subscribe_on_ruim_ready=true
-ro.ril.svdo=true
+ro.ril.svdo=false
 ro.telephony.default_network=10
-telephony.lteOnCdmaDevice=1
+telephony.lteOnCdmaDevice=0
 telephony.sms.pseudo_multipart=0
 ril.subscription.types=NV,RUIM
 
@@ -21,9 +20,10 @@ ro.config.combined_signal=true
 ro.gsm.data_retry_config=max_retries=infinite,5000,5000,60000,120000,480000,900000
 DEVICE_PROVISIONED=1
 persist.eons.enabled=false
+ro.use_data_netmgrd=true
 
 # Set default cdma subscription to RUIM in database
-ro.telephony.default_cdma_sub=0
+#ro.telephony.default_cdma_sub=0
 
 # Use IMSI from SIM
-ro.telephony.get_imsi_from_sim=true
+# ro.telephony.get_imsi_from_sim=true
