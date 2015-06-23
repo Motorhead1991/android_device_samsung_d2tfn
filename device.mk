@@ -23,5 +23,7 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/d2tfn/overlay
 # Inherit from d2-common
 $(call inherit-product, device/samsung/d2-common/d2-common.mk)
 
+PRODUCT_PROPERTY_OVERRIDES += rild.libpath=/system/lib/libril-qc-qmi-1.so
+
 PRODUCT_PACKAGES += \
-    init.target.rc \
+    init.target.rc 
